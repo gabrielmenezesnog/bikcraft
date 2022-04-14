@@ -53,8 +53,12 @@
     background: var(--cor-10);
   }
 
-  .header-menu a::before,
-  a:hover::before {
+  .header-menu a:after {
+    display: none;
+  }
+
+  .header-menu a:hover::after,
+  .header-menu a.ativo::after {
     display: none;
   }
 }
@@ -66,6 +70,11 @@
   .header-menu a {
     font-size: 0.875rem;
     padding: 8px 12px;
+  }
+
+  .header-menu a:hover::after,
+  .header-menu a.ativo::after {
+    display: none;
   }
 }
 
