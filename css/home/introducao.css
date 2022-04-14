@@ -1,0 +1,57 @@
+.introducao-bg {
+  background: var(--cor-12);
+
+  /* Box shadow que criará o efeito de imagem vazando do fundo preto */
+
+  box-shadow: inset 0 -120px #fff;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 210px;
+}
+
+.introducao-conteudo h1 {
+  margin-bottom: 32px;
+}
+
+.introducao-conteudo p {
+  margin-bottom: 20px;
+  max-width: 38ch;
+}
+
+.introducao img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    background: var(--cor-11);
+    padding: 40px;
+
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .introducao-conteudo {
+    padding-bottom: 0px;
+  }
+  .introducao-conteudo h1 {
+    margin-bottom: 16px;
+  }
+
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
+}

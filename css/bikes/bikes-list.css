@@ -1,0 +1,58 @@
+.bike-list {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.bike-list h2 {
+  margin-bottom: 40px;
+}
+
+.bike-list ul {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+}
+
+.bike-list li {
+  min-width: 280px;
+  margin-bottom: 20px;
+}
+
+.bike-list a {
+  display: block;
+  /* Para a tecla TAB selecionar imagem e texto juntos */
+}
+
+.bike-list img {
+  margin-bottom: 16px;
+}
+
+.bike-list h3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.bike-list h3::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  background-color: var(--cor-p1);
+  margin-right: 8px;
+}
+
+.bike-list a:hover h3::before {
+  width: 24px;
+  transition: all 0.3s;
+}
+
+.bike-list li span {
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .bike-list {
+    padding-bottom: 60px;
+  }
+}

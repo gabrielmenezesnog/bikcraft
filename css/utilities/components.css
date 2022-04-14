@@ -1,0 +1,77 @@
+.button-padrao {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  color: #332200;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  text-transform: uppercase;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border: none;
+  width: max-content;
+  cursor: pointer;
+}
+
+.button-padrao:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.button-sec {
+  display: inline-block;
+  padding: 16px 32px;
+  background: var(--cor-10);
+  border-radius: 4px;
+  color: #fff;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  text-transform: uppercase;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 01);
+}
+
+.button-sec:hover {
+  background: var(--cor-9);
+}
+
+.button-terc {
+  display: inline-block;
+  color: var(--cor-p1);
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.button-terc::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+}
+
+.button-terc:hover {
+  color: var(--cor-0);
+}
+
+.seta {
+  display: flex;
+  align-items: center;
+}
+
+.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(/resources/img/icones/seta.svg);
+  transition: 0.2s;
+}
+
+.seta:hover::after {
+  transform: translateX(4px);
+}
+
+@media (max-width: 600px) {
+  .button-padrao {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
